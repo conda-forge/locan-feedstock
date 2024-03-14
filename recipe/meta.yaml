@@ -1,5 +1,5 @@
 {% set name = "locan" %}
-{% set version = "0.19.0" %}
+{% set version = "0.19.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/locan-{{ version }}.tar.gz
-  sha256: 0f89a07df5e376747fa8d6551a9b9e639e46a809ab192196766adb72d8671421
+  sha256: 5c8266af9339b1a75f060312454572e006fa797cd8a95cd93df87a738995e7c8
 
 build:
   skip: true  # [py<39]
