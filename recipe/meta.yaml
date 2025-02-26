@@ -1,5 +1,5 @@
 {% set name = "locan" %}
-{% set version = "0.19.1" %}
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/locan-{{ version }}.tar.gz
-  sha256: 5c8266af9339b1a75f060312454572e006fa797cd8a95cd93df87a738995e7c8
+  sha256: 292ebc7061f483a7a31a13c2fcdef49b659c679fc8f9f5473b82321724d7b399
 
 build:
   skip: true  # [py<39]
   entry_points:
     - locan = locan.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
