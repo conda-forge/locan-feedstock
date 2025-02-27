@@ -19,33 +19,33 @@ build:
 requirements:
   host:
     - python
-    - setuptools >=45
+    - setuptools >=64
     - wheel
-    - setuptools-scm >=6.2
+    - setuptools-scm >=8
     - pip
   run:
     - python
     - asdf
-    - tifffile
-    - ruamel.yaml
-    - fast-histogram
     - boost-histogram
-    - lmfit
-    - protobuf <5
-    - shapely !=2.0.0,!=2.0.1
-    - networkx
-    - scikit-learn
-    - scikit-image
-    - matplotlib-base
-    - scipy
-    - pandas
-    - numpy >1.20.0
-    - tqdm
     - cython
-    - tomli >=1.1.0  # [py<311]
-    - qtpy !=2.3.0
-    - typing-extensions
+    - fast-histogram
     - lazy_loader >=0.3
+    - lmfit
+    - matplotlib-base
+    - networkx
+    - numpy >1.20.0
+    - pandas
+    - protobuf >5.26.0
+    - qtpy !=2.3.0
+    - ruamel.yaml
+    - scikit-image
+    - scikit-learn
+    - scipy
+    - shapely !=2.0.0,!=2.0.1
+    - tifffile
+    - tomli >=1.1.0  # [py<311]
+    - tqdm
+    - typing-extensions
 
 test:
   imports:
