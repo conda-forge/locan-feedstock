@@ -1,13 +1,13 @@
 {% set name = "locan" %}
-{% set version = "0.21.0" %}
+{% set version = "0.22.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/locan-{{ version }}.tar.gz
-  sha256: 03aaccd2fa502b35c4bc989daf88baf12fb655e9521778fab5d991cb70f5596d
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/locan-{{ version }}.tar.gz
+  sha256: 43c9555457d82b889b50c325ba9d75157894cab166809859493abed46ea59647
 
 build:
   skip: true  # [py<39]
